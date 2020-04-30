@@ -122,45 +122,47 @@ class _ImageAnalyzerState extends State<ImageAnalyzer> {
         title: new Text(APP_NAME),
       ),
       body: new Container(
-        padding: EdgeInsets.symmetric(vertical: 50, horizontal: 25),
+        padding: EdgeInsets.symmetric(vertical: 25, horizontal: 25),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => ImageCompare(
-                              origImg: img,
-                              enhancedImage: enhancedImage,
-                            )),
-                  );
-                },
-                child: result(context),
-              ),
-              textComments(context),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  new FloatingActionButton(
-                    heroTag: "camera",
-                    onPressed: () {
-                      imagePicker(0);
-                    },
-                    child: new Icon(Icons.camera_alt),
-                  ),
-                  new FloatingActionButton(
-                      heroTag: "image_picker",
+          child: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => ImageCompare(
+                                origImg: img,
+                                enhancedImage: enhancedImage,
+                              )),
+                    );
+                  },
+                  child: result(context),
+                ),
+                textComments(context),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    new FloatingActionButton(
+                      heroTag: "camera",
                       onPressed: () {
-                        imagePicker(1);
+                        imagePicker(0);
                       },
-                      child: new Icon(Icons.file_upload)),
-                ],
-              ),
-            ],
+                      child: new Icon(Icons.camera_alt),
+                    ),
+                    new FloatingActionButton(
+                        heroTag: "image_picker",
+                        onPressed: () {
+                          imagePicker(1);
+                        },
+                        child: new Icon(Icons.file_upload)),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

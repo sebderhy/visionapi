@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'image_analyzer.dart';
+import 'url_image_analyzer.dart';
 import 'constants.dart';
 
 class AlgoChoice extends StatelessWidget {
