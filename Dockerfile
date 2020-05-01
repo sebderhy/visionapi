@@ -7,6 +7,8 @@ COPY requirements.txt .
 
 COPY demo.ipynb .
 
+COPY utils.py .
+
 RUN pip install --upgrade pip
 
 RUN pip install --upgrade -r requirements.txt
