@@ -1,3 +1,5 @@
 pillow
 numpy
 ipywidgets
+voila
+requests

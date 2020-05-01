@@ -1,0 +1,5 @@
+*.pth
+.gitignore
+visionapp/*
+Dockerfile
+README.md
