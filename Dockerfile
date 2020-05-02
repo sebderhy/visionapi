@@ -9,6 +9,10 @@ COPY demo.ipynb .
 
 COPY utils.py .
 
+COPY img_out/* img_out/
+
+COPY test_img.png .
+
 RUN pip install --upgrade pip
 
 RUN pip install --upgrade -r requirements.txt
