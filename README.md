@@ -16,8 +16,11 @@ The Cloud Vision API enables developers to integrate state-of-the-art computer v
 ## Repo content
 This repo contains:
 * A [notebook](test_api.ipynb) showing how to use the API in a python environment with only basic libraries (requests, pillow, ...)
-* An app written with [Flutter](https://github.com/flutter/flutter). The app itself will be available soon.
+* An [app](https://drive.google.com/open?id=1tPdnUmslA8EeusONc26vTbXXIY6aJ9Nx) written with [Flutter](https://github.com/flutter/flutter). The app itself will be available soon.
 * A [web demo](http://www.visionapidemo.com) built with Jupyter ipywidgets, and deployed with [voila](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93)
+
+## API Documentation
+The documentation can be found [here](http://visionapi.cloud/docs)
 
 ## Algorithms available in the API (and credits)
 The algorithms from this API are all based on great notebooks / github repositories, which I highly recommend to look at: 
@@ -33,13 +36,10 @@ The algorithms from this API are all based on great notebooks / github repositor
 *Based on the paper ["From Big to Small: Multi-Scale Local Planar Guidance for Monocular Depth Estimation"](https://arxiv.org/pdf/1907.10326v5.pdf), currently state-of-the-art on [KITTI and MIT Datasets](https://paperswithcode.com/task/monocular-depth-estimation), and its [PyTorch implementation](https://github.com/Navhkrin/Bts-PyTorch)*. Visual results of this algorithm can be found [here](https://www.youtube.com/watch?v=ekezJiGaiQk&feature=youtu.be)
 
 ## Limits of the API
-1. The API currently officially supports **only** images < 2MB. While larger images may work, they may undergo downsizing in the process, and it might affect the quality of the results (in particular for Super-resolution where the image's details are important).
-2. The *semantic segmentation and depth estimation* algorithms will work well **only on road pictures** (i.e. pictures taken from a car), because they have been trained on such datasets.
-3. The *depth algorithm* has (at least) one known issue: it **always sees the sky as very close** (is that a message from above?!). An easy fix to this issue is to combine it with semantic segmentation algorithm and force "sky" pixels to get very far depth.
-4. The Background segmentation algorithm will work **only on portraits/selfies**, and is currently **only giving a rough contour** (typically, it will miss the subtilities in hair)
-5. In general, this is a side-project and is not considered as a finished product. Although I do my best to keep it working and resilient, the server may not be available or fail.
-
-In general, if you have any request, feedback or question, please contact me at sebderhy@gmail.com, and I'll do my best to help.
+* Be patient! When you submit an image, the results may take about 20 seconds to arrive
+* The *semantic segmentation and depth estimation* algorithms will work well **on road pictures** (i.e. pictures taken from a car), because they have been trained on such datasets.
+* The Background segmentation algorithm will work **only on portraits/selfies**, and is currently **only giving a rough contour** (typically, it will miss the subtilities in hair)
+* Keep in mind that this is a side-project and not a finished product yet! Although I do my best to keep everything working and resilient, the results may be disappointing, and the server may fail (apologies if that's the case). In any case, please share your feedback with me at sebderhy@gmail.com!   
 
 ## Why this project ?
 I've always been passionated about how cutting-edge research (in particular AI) is translated into real world impact. The truth is that we live in a world where great research sometimes take several years before actually being deployed and making an impact. Conversely, promising research can sometimes end-up as a huge failure when used in the real-life. 
