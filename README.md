@@ -1,10 +1,23 @@
 # Cloud Vision API
 The Cloud Vision API enables developers to integrate state-of-the-art computer vision algorithms in a line of code, without any algorithmic or integration struggle. 
 
+<table>
+    <tr><td><center>input image</center></td><td><center>semantic segmentation</center></td></tr>
+    <tr><td><img src='test_img.png'></td><td><img src='img_out/semseg-3.png'></td></tr>
+    <tr><td><center>Super-resolution</center></td><td><center>Depth</center></td></tr>
+    <tr><td><img src='img_out/superres-2b.png'></td><td><img src='img_out/depth-bts.png'></td></tr>
+    <tr><td><center>Style Transfer 1</center></td><td><center>Style Transfer 3</center></td></tr>
+    <tr><td><img src='img_out/styletransf-1.png'></td><td><img src='img_out/styletransf-3.png'></td></tr>
+    <tr><td><center>Input selfie</center></td><td><center>Background Swap</center></td></tr>
+    <tr><td><img src='https://images.unsplash.com/photo-1543486958-d783bfbf7f8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'></td><td><img src='img_out/binseg-3-bgswap.png'></td></tr>
+
+</table>
+
 ## Repo content
 This repo contains:
-* A notebook that explains how to use the API in a python environment
-* The source code of an app written with [Flutter](https://github.com/flutter/flutter). If you want the app itself, please contact me at sebderhy@gmail.com
+* A [notebook](test_api.ipynb) showing how to use the API in a python environment with only basic libraries (requests, pillow, ...)
+* An app written with [Flutter](https://github.com/flutter/flutter). The app itself will be available soon.
+* A [web demo](http://www.visionapidemo.com) built with Jupyter ipywidgets, and deployed with [voila](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93)
 
 ## Algorithms available in the API (and credits)
 The algorithms from this API are all based on great notebooks / github repositories, which I highly recommend to look at: 
@@ -18,33 +31,6 @@ The algorithms from this API are all based on great notebooks / github repositor
 *Based on [Zachary Mueller](https://github.com/muellerzr)'s [notebook](https://github.com/muellerzr/Practical-Deep-Learning-for-Coders-2.0/blob/master/Computer%20Vision/07_Binary_Segmentation.ipynb)*
 * **Monocular Depth Estimation**:  estimates how far each pixel is from the camera <br />
 *Based on the paper ["From Big to Small: Multi-Scale Local Planar Guidance for Monocular Depth Estimation"](https://arxiv.org/pdf/1907.10326v5.pdf), currently state-of-the-art on [KITTI and MIT Datasets](https://paperswithcode.com/task/monocular-depth-estimation), and its [PyTorch implementation](https://github.com/Navhkrin/Bts-PyTorch)*. Visual results of this algorithm can be found [here](https://www.youtube.com/watch?v=ekezJiGaiQk&feature=youtu.be)
-
-## Results examples
-### Super-resolution
-![img_input](superres-2b-results.gif "GIF Results") 
-
-![img_input](superres-2b-results-2.gif "GIF Results 2") 
-
-### Monocular Depth Estimation
-![img_input](depth-bts-results.gif) 
-
-### Style Transfer
-#### Input 
-
-![img_input](test_img.png) 
-
-#### Outputs
-
-![img_input](img_out/styletransf-1.png) 
-![img_input](img_out/styletransf-2.png) 
-![img_input](img_out/styletransf-3.png) 
-
-### Semantic Segmentation
-![img_input](img_out/semseg-3.png) 
-
-### Background Segmentation
-![img_input](img_out/binseg-3.png) 
-![img_input](img_out/binseg-3_bgswap.png) 
 
 ## Limits of the API
 1. The API currently officially supports **only** images < 2MB. While larger images may work, they may undergo downsizing in the process, and it might affect the quality of the results (in particular for Super-resolution where the image's details are important).
