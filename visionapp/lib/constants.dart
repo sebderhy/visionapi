@@ -8,8 +8,7 @@ class Model {
 
 List<Model> modelsList = <Model>[
   const Model('Background Segmentation', 'binseg-3'),
-//  const Model('Superres 1', 'superres-1b'),
-  const Model('Super-resolution', 'superres-1b'),
+  const Model('Super-resolution', 'superres-2b'),
   const Model('Style Transfer 1', 'styletransf-1'),
   const Model('Style Transfer 2', 'styletransf-2'),
   const Model('Style Transfer 3', 'styletransf-3'),

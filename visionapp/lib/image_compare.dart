@@ -23,6 +23,21 @@ class _ImageCompareState extends State<ImageCompare> {
           isEnhanced = !isEnhanced;
         });
       },
+//      child: isEnhanced
+//          ? Image.memory(
+//              this.widget.enhancedImage,
+//              fit: BoxFit.cover,
+//              height: double.infinity,
+//              width: double.infinity,
+//              alignment: Alignment.center,
+//            )
+//          : Image.file(
+//              this.widget.origImg,
+//              fit: BoxFit.cover,
+//              height: double.infinity,
+//              width: double.infinity,
+//              alignment: Alignment.center,
+//            ),
       child: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
@@ -30,7 +45,7 @@ class _ImageCompareState extends State<ImageCompare> {
             image: isEnhanced
                 ? MemoryImage(this.widget.enhancedImage)
                 : FileImage(this.widget.origImg),
-            fit: BoxFit.cover,
+            fit: BoxFit.fill,
           ),
         ),
       ),
