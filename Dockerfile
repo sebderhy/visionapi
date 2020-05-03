@@ -11,6 +11,8 @@ COPY utils.py .
 
 COPY img_out/* img_out/
 
+COPY logos/* logos/
+
 COPY test_img.png .
 
 RUN pip install --upgrade pip
