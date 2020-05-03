@@ -21,8 +21,4 @@ RUN pip install --upgrade -r requirements.txt
 
 EXPOSE 8866
 
-RUN ls 
-
-RUN ls logos
-
 CMD ["voila", "demo.ipynb"]
