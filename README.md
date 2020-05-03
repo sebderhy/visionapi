@@ -1,5 +1,5 @@
 # Cloud Vision API
-The Cloud Vision API enables developers to integrate state-of-the-art computer vision algorithms in a line of code, without any algorithmic or integration struggle. 
+The Cloud Vision API enables developers to integrate state-of-the-art computer vision algorithms in a line of code, without any algorithmic or integration struggle. [Try it](http://www.visionapidemo.com)!
 
 <table>
     <tr><td><center>input image</center></td><td><center>semantic segmentation</center></td></tr>
@@ -16,8 +16,8 @@ The Cloud Vision API enables developers to integrate state-of-the-art computer v
 ## Repo content
 This repo contains:
 * A [notebook](test_api.ipynb) showing how to use the API in a python environment with only basic libraries (requests, pillow, ...)
-* An [app](https://drive.google.com/open?id=1tPdnUmslA8EeusONc26vTbXXIY6aJ9Nx) written with [Flutter](https://github.com/flutter/flutter). The app itself will be available soon.
-* A [web demo](http://www.visionapidemo.com) built with Jupyter ipywidgets, and deployed with [voila](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93)
+* An [app](https://drive.google.com/open?id=1tPdnUmslA8EeusONc26vTbXXIY6aJ9Nx) written with [Flutter](https://github.com/flutter/flutter).
+* A [web demo](http://www.visionapidemo.com) built with a [Jupyter notebook](demo.ipynb), and deployed with [Voila](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93)
 
 ## API Documentation
 The documentation can be found [here](http://visionapi.cloud/docs)
