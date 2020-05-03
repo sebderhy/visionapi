@@ -1,5 +1,7 @@
 *.pth
 .gitignore
+.ipynb_checkpoints/*
+__pycache__/*
 visionapp/*
 Dockerfile
 README.md

@@ -9,9 +9,9 @@ COPY demo.ipynb .
 
 COPY utils.py .
 
-COPY img_out/* img_out/
+COPY img_out img_out/
 
-COPY logos/* logos/
+COPY logos logos/
 
 COPY test_img.png .
 
@@ -19,10 +19,10 @@ RUN pip install --upgrade pip
 
 RUN pip install --upgrade -r requirements.txt
 
-# COPY app app/
-
 EXPOSE 8866
 
-# RUN voila demo.ipynb
+RUN ls 
+
+RUN ls logos
 
 CMD ["voila", "demo.ipynb"]
