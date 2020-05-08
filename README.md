@@ -1,5 +1,5 @@
 # Cloud Vision API
-The Cloud Vision API enables developers to integrate state-of-the-art computer vision algorithms in a line of code, without any algorithmic or integration struggle. 
+The Cloud Vision API enables developers to integrate state-of-the-art computer vision algorithms in a line of code, without any algorithmic or integration struggle. [Try it](http://www.visionapidemo.com)!
 
 <table>
     <tr><td><center>input image</center></td><td><center>semantic segmentation</center></td></tr>
@@ -16,8 +16,8 @@ The Cloud Vision API enables developers to integrate state-of-the-art computer v
 ## Repo content
 This repo contains:
 * A [notebook](test_api.ipynb) showing how to use the API in a python environment with only basic libraries (requests, pillow, ...)
-* An [app](https://drive.google.com/open?id=1tPdnUmslA8EeusONc26vTbXXIY6aJ9Nx) written with [Flutter](https://github.com/flutter/flutter). The app itself will be available soon.
-* A [web demo](http://www.visionapidemo.com) built with Jupyter ipywidgets, and deployed with [voila](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93)
+* An [app](https://drive.google.com/open?id=1tPdnUmslA8EeusONc26vTbXXIY6aJ9Nx) written with [Flutter](https://github.com/flutter/flutter).
+* A [web demo](http://www.visionapidemo.com) built with a [Jupyter notebook](demo.ipynb), and deployed with [Voila](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93)
 
 ## API Documentation
 The documentation can be found [here](http://visionapi.cloud/docs)
@@ -42,16 +42,16 @@ The algorithms from this API are all based on great notebooks / github repositor
 * Keep in mind that this is a side-project and not a finished product yet! Although I do my best to keep everything working and resilient, the results may be disappointing, and the server may fail (apologies if that's the case). In any case, please share your feedback with me at sebderhy@gmail.com!   
 
 ## Why this project ?
-I've always been passionated about how cutting-edge research (in particular AI) is translated into real world impact. The truth is that we live in a world where great research sometimes take several years before actually being deployed and making an impact. Conversely, promising research can sometimes end-up as a huge failure when used in the real-life. 
+I've always been passionated by how cutting-edge research (in particular AI) is translated into real world impact. The truth is that we live in a world where great research can sometimes take several years before being actually deployed and making an impact. Conversely, promising research can sometimes end-up as a huge failure when used in real-life environment. 
 
-Therefore, I wanted to make the best AI algorithms (starting with computer vision) accessible in a line of code, so that:
+Therefore, I wanted to make the best AI algorithms (starting with computer vision) accessible in a single line of code, so that:
 * Developpers without AI expertise can use the best algorithms in their code without struggling with any integration
-* AI researchers can have their code usable by the whole world without struggling with deployment and dev ops   
+* AI researchers can have their code usable by the whole world without struggling with deployment and dev ops, and more easily benchmark with other algorithms   
 * More transparency is brought into the AI research world, and the strength and limitations of each algorithm becomes quickly apparent. 
 
-Although, this project is still at its infancy, it can be compared to:
-* The computer vision APIs from [Microsoft](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/#features), [Amazon](https://aws.amazon.com/rekognition/), and [Google](https://cloud.google.com/vision). However, these APIs do not propose most of the algorithms that are included in this API.
-* What [Hugging Face](https://huggingface.co/) is doing for Natural Language Processing. HF has actually been a great source of inspiration here for me, since any developper can use state-of-the-art NLP with a few lines of code.
+Although this project is still at its infancy, it can be compared to:
+* The computer vision APIs from [Microsoft](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/#features), [Amazon](https://aws.amazon.com/rekognition/), and [Google](https://cloud.google.com/vision). However, these APIs do not propose most of the algorithms that are included in this API (see above).
+* What [Hugging Face](https://huggingface.co/) is doing for Natural Language Processing. HF has actually been a great source of inspiration here for me, since they empower any developper to make state-of-the-art NLP with just a few lines of code.
 
 ## Contact
 Don't hesitate to contact me at sebderhy@gmail.com for any feedback / request / question. Please let me know also if there is also any algorithm that you think I should add to this API.
