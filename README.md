@@ -6,11 +6,12 @@ The Cloud Vision API enables developers to integrate state-of-the-art computer v
     <tr><td><img src='test_img.png'></td><td><img src='img_out/semseg-3.png'></td></tr>
     <tr><td><center>Super-resolution</center></td><td><center>Depth</center></td></tr>
     <tr><td><img src='img_out/superres-2b.png'></td><td><img src='img_out/depth-bts.png'></td></tr>
-    <tr><td><center>Style Transfer 1</center></td><td><center>Style Transfer 3</center></td></tr>
-    <tr><td><img src='img_out/styletransf-1.png'></td><td><img src='img_out/styletransf-3.png'></td></tr>
+    <tr><td><center>Object Detection</center></td><td><center>Style Transfer 1</center></td></tr>
+    <tr><td><img src='img_out/objdet.jpg'></td><td><img src='img_out/styletransf-1.png'></td></tr>
+    <tr><td><center>Style Transfer 2</center></td><td><center>Style Transfer 3</center></td></tr>
+    <tr><td><img src='img_out/styletransf-2.png'></td><td><img src='img_out/styletransf-3.png'></td></tr>
     <tr><td><center>Input selfie</center></td><td><center>Background Swap</center></td></tr>
     <tr><td><img src='https://images.unsplash.com/photo-1543486958-d783bfbf7f8e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'></td><td><img src='img_out/binseg-3-bgswap.png'></td></tr>
-
 </table>
 
 ## Repo content
@@ -33,7 +34,9 @@ The algorithms from this API are all based on great notebooks / github repositor
 * **Background Segmentation**: creates a mask to separate between the foreground and background in portrait pictures <br />
 *Based on [Zachary Mueller](https://github.com/muellerzr)'s [notebook](https://github.com/muellerzr/Practical-Deep-Learning-for-Coders-2.0/blob/master/Computer%20Vision/07_Binary_Segmentation.ipynb)*
 * **Monocular Depth Estimation**:  estimates how far each pixel is from the camera <br />
-*Based on the paper ["From Big to Small: Multi-Scale Local Planar Guidance for Monocular Depth Estimation"](https://arxiv.org/pdf/1907.10326v5.pdf), currently state-of-the-art on [KITTI and MIT Datasets](https://paperswithcode.com/task/monocular-depth-estimation), and its [PyTorch implementation](https://github.com/Navhkrin/Bts-PyTorch)*. Visual results of this algorithm can be found [here](https://www.youtube.com/watch?v=ekezJiGaiQk&feature=youtu.be)
+*Based on the paper ["From Big to Small: Multi-Scale Local Planar Guidance for Monocular Depth Estimation"](https://arxiv.org/pdf/1907.10326v5.pdf), ranked #1 on [KITTI and MIT Datasets](https://paperswithcode.com/task/monocular-depth-estimation) as of May 2020, and its [PyTorch implementation](https://github.com/Navhkrin/Bts-PyTorch)*. 
+* **Object Detection**:  locates and classifies objects in a given picture <br />
+*Based on the paper ["EfficientDet: Scalable and Efficient Object Detection"](https://arxiv.org/pdf/1911.09070.pdf), ranked #2 as of May 2020 on [COCO's Test set](https://paperswithcode.com/sota/object-detection-on-coco).
 
 ## Limits of the API
 * Be patient! When you submit an image, the results may take about 20 seconds to arrive
