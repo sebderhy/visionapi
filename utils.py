@@ -98,7 +98,9 @@ def URLImgAPICall(url, api_path):
 
     # data to be sent to api 
     params = {'url': url}
+    files = {'file': open('dummy.txt', 'w+')}
+
     # sending post request and saving response as response object 
-    r = requests.post(url = API_ENDPOINT, params=params)
+    r = requests.post(url = API_ENDPOINT, files=files, params = params)
     assert r.status_code==200
     return r
