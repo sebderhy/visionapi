@@ -1,5 +1,6 @@
-# Cloud Vision API
-The Cloud Vision API enables developers to integrate state-of-the-art computer vision algorithms in a line of code, without any algorithmic or integration struggle.
+<center><img src="https://github.com/sebderhy/visionapi/blob/master/logos/cloud_vision_api.PNG?raw=true"></center>
+
+The Cloud Vision API enables developers to integrate state-of-the-art computer vision algorithms in a line of code, without any algorithmic or integration struggle. [Try it in Colab](https://colab.research.google.com/drive/1u2i_-EdbXYYK6D5e95E0h6Scg3UkDTbR?usp=sharing)!
 
 <table>
     <tr><td><center>Object Detection</center></td><td><center>Depth</center></td></tr>
