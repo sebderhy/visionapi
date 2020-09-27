@@ -20,7 +20,7 @@ Although, this project is still at its infancy, it can be compared to:
 ## Repo content
 This repo contains:
 * A [notebook](test_api.ipynb) showing how to use the API in a python environment with only basic libraries (requests, pillow, ...)
-* An [app](https://drive.google.com/open?id=1tPdnUmslA8EeusONc26vTbXXIY6aJ9Nx) written with [Flutter](https://github.com/flutter/flutter). 
+* An [app](https://github.com/sebderhy/visionapi/tree/master/visionapp) written with [Flutter](https://github.com/flutter/flutter). 
 
 ## Algorithms available in the API (and credits)
 The Cloud Vision API enables developers to integrate state-of-the-art computer vision algorithms in a line of code, without any algorithmic or integration struggle. Below is the list of algorithms currently available in the API:
